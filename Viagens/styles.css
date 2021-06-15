@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header {
+    font-family: 'Comfortaa', cursive;
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('../Assets/capadocia2.jpeg');
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    background-color: rgb(230, 131, 18);
+    color: #fff;
+}
+
+header nav p {
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+}
+
+.header-content {
+    text-align: center;
+    max-width: 400px;
+    margin: 150px auto;
+    color: #fff;
+}
+
+.header-content h1 {
+    margin-bottom: 50px;
+    text-align: start;
+    font-size: 4rem;
+}
+
+.header-content p {
+    text-align: start;
+}
+
+.pacotes {
+    background: rgb(201, 199, 199);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.pacotes .card-content ul li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+.pacotes .card-content {
+    width: 250px;
+    height: 300px;
+    background: no-repeat center url('../Assets/Tóquio.jpeg');
+    background-size: cover;
+    border-radius: 10px 0;
+    color: #fff;
+    margin: 25px auto;
+}
+
+.pacotes .card1 .card-content {
+    width: 250px;
+    height: 300px;
+    background: no-repeat center url('../Assets/Roma.jpeg');
+    background-size: cover;
+    border-radius: 10px 0;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.pacotes .card2 .card-content {
+    width: 250px;
+    height: 300px;
+    background: no-repeat center url('../Assets/Brasil.jpeg');
+    background-size: cover;
+    border-radius: 10px 0;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.pacotes .card3 .card-content {
+    width: 250px;
+    height: 300px;
+    background: no-repeat center url('../Assets/Franca.jpeg');
+    background-size: cover;
+    border-radius: 10px 0;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.pacotes .card-content h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.pacotes .card-content p{
+    font-size: 17px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+    body {
+        height: calc(100vh - 55px);
+    }
+
+    header nav ul {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background: rgb(56, 52, 56);
+        color: #fff;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
