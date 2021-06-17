@@ -65,6 +65,9 @@ header nav p {
 
 .header-content p {
     text-align: start;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 1em;
+    border-radius: 0.5em;
 }
 
 .pacotes {
@@ -73,79 +76,6 @@ header nav p {
     display: flex;
     justify-content: space-around;
 }
-
-.pacotes .card-content ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.pacotes .card-content ul li {
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    margin: 3px 0;
-}
-
-.pacotes .card-content ul li svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 15px;
-}
-
-.pacotes .card-content {
-    width: 250px;
-    height: 300px;
-    background: no-repeat center url('../Assets/Tóquio.jpeg');
-    background-size: cover;
-    border-radius: 10px 0;
-    color: #fff;
-    margin: 25px auto;
-}
-
-.pacotes .card1 .card-content {
-    width: 250px;
-    height: 300px;
-    background: no-repeat center url('../Assets/Roma.jpeg');
-    background-size: cover;
-    border-radius: 10px 0;
-    color: #fff;
-    margin-left: 20px;
-}
-
-.pacotes .card2 .card-content {
-    width: 250px;
-    height: 300px;
-    background: no-repeat center url('../Assets/Brasil.jpeg');
-    background-size: cover;
-    border-radius: 10px 0;
-    color: #fff;
-    margin-left: 20px;
-}
-
-.pacotes .card3 .card-content {
-    width: 250px;
-    height: 300px;
-    background: no-repeat center url('../Assets/Franca.jpeg');
-    background-size: cover;
-    border-radius: 10px 0;
-    color: #fff;
-    margin-left: 20px;
-}
-
-.pacotes .card-content h1 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 35px;
-    margin-left: 20px;
-}
-
-.pacotes .card-content p{
-    font-size: 17px;
-    margin-left: 2px;
-    text-align: center;
-}
-
-
 
 
 
