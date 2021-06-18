@@ -10,37 +10,43 @@ body {
     /*font-family: 'Montserrat', sans-serif;*/
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
 header {
     font-family: 'Comfortaa', cursive;
     height: calc(100vh - 150px);
     background: no-repeat center/cover url('../Assets/capadocia2.jpeg');
 }
 
+#home:hover {
+    background-color: rgb(37, 39, 38);
+    transition: 1s;
+    border-radius: 5px;
+}
+
+
+
+#pacotes:hover {
+    background-color: seagreen;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+#servicos:hover {
+    background-color: rgb(139, 46, 100);
+    transition: 1s;
+    border-radius: 5px;
+}
+
+#contatos:hover {
+    background-color: rgb(46, 48, 139);
+    transition: 1s;
+    border-radius: 5px;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
-}
-
-button {
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    border: 0;
-    background-color: rgb(230, 131, 18);
-    color: #fff;
+    align-items: center;
 }
 
 header nav p {
@@ -50,11 +56,57 @@ header nav p {
     font-size: 20px;
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+header nav ul li {
+    margin: 0 30px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-viagem {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+    align-items: flex-start;
+}
+
 .header-content {
     text-align: center;
-    max-width: 400px;
-    margin: 150px auto;
+    max-width: 600px;
+    margin: 100px ;
     color: #fff;
+}
+
+.header-content-login {
+    color: #000;
+    background-color: rgb(255, 255, 255, 0.40);
+    border-radius: 7px;
+    padding: 30px;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 50%);
+}
+
+.header-content-login #tell {
+    border-radius: 7px;
+    width: 30mm;
+    padding: 10px;
+    border: 1;
+}
+
+.header-content-login #email {
+    border-radius: 7px;
+    width: 80mm;
+    padding: 10px;
+    border: 1;
+    border-color: rgb(160, 157, 157);
 }
 
 .header-content h1 {
@@ -65,9 +117,24 @@ header nav p {
 
 .header-content p {
     text-align: start;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.80);
     padding: 1em;
     border-radius: 0.5em;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    background-color: rgb(230, 131, 18);
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgb(165, 102, 30);
+    transition: 0.3s;
 }
 
 .pacotes {

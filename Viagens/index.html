@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" meta="">
-    <title>Viagens </title>
+    <title>Viagens</title>
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
@@ -13,17 +13,25 @@
         <nav>
             <p>Hebert Turismo</p>
             <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Contatos</li>
+                <a href="https://www.youtube.com/watch?v=Jszz7M676y8"><li id="home">Home</li></a>
+                <a href="https://www.submarinoviagens.com.br/passagens-aereas"><li id="pacotes">Pacotes</li></a>
+                <a href="https://www.youtube.com/watch?v=Jszz7M676y8"><li id="servicos">Serviços</li></a>
+                <a href="https://www.youtube.com/watch?v=Jszz7M676y8"><li id="contatos">Contatos</li></a>
             </ul>
         </nav>
 
-        <div class="header-content">
-            <h1>Capadócia</h1>
-            <p>A Capadócia, é conhecida pelas inconfundíveis "chaminés de fada", altas formações rochosas em formato de cone agrupadas no Vale dos Monges, em Göreme e em outros lugares, e é claro, as centenas de balões de ar quente que voam no céu durante o nascer do sol todas as manhãs. Outros locais importantes são as casas da Idade do Bronze esculpidas nas paredes do vale por trogloditas (habitantes das cavernas) e usadas posteriormente como refúgio pelos primeiros cristãos.</p>
-            <button>Saiba mais</button>
+        <div class="header-viagem">
+            <div class="header-content">
+                <h1>Capadócia</h1>
+                <p>A Capadócia, é conhecida pelas inconfundíveis "chaminés de fada", altas formações rochosas em formato de cone agrupadas no Vale dos Monges, em Göreme e em outros lugares, e é claro, as centenas de balões de ar quente que voam no céu durante o nascer do sol todas as manhãs. Outros locais importantes são as casas da Idade do Bronze esculpidas nas paredes do vale por trogloditas (habitantes das cavernas) e usadas posteriormente como refúgio pelos primeiros cristãos.</p>
+                <button>Saiba mais</button>
+            </div>
+            <div class="header-content-login">
+                <h1>Cadastre para ser notificado</h1>
+                <input type="tel" name="tell" id="tell" value="cell">
+                <input type="email" name="email" id="email" value="email">
+                <button>Assinar</button>
+            </div>
         </div>
     </header>
 
@@ -32,6 +40,18 @@
 
     <script>
         feather.replace()
+
+        var home = window.document.getElementById('home')
+        var pacotes = window.document.getElementById('pacotes')
+        var servicos = window.document.getElementById('servicos')
+        var contatos = window.document.getElementById('contatos')
+
+
+        home.addEventListener('click', entrar)
+
+        function entrar(){
+            home.style.backgroundColor = 'red'
+        }
     </script>
 </body>
 </html>
